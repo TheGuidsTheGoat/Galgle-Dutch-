@@ -27,7 +27,7 @@ def woord_3():
     
 
 def niveau():
-    level = input('Op welk leven zou u het spel willen spelen: ')
+    level = input('Op welk level zou u het spel willen spelen: ')
     return level
 
 def galgje_1(woord):
@@ -375,5 +375,9 @@ def spelen():
     
     
 if __name__ == "__main__":
+    print('1 - makkelijk')
+    print('2 - gemiddeld')
+    print('3 - moeilijk')
+    print('4 - shuffle')
     spelen()
     
