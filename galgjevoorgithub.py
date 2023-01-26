@@ -199,7 +199,7 @@ def galgje_3(woord):
         print(visual_galgje(levens))
         print(woord_in_proces)
         print('\n') 
-        print('toaal:',len(woord),',nog te raden:',list(woord_in_proces).count('_'),',resterende levens:',levens)
+        print('totaal:',len(woord),',nog te raden:',list(woord_in_proces).count('_'),',resterende levens:',levens)
         print('geraden letters:',','.join(geraden_letters))
         print('\n')  
     if woord_geraden == True:
@@ -261,7 +261,7 @@ def shuffle(woord):
         print(visual_galgje(levens))
         print(woord_in_proces)
         print('\n') 
-        print('toaal:',len(woord),',nog te raden:',list(woord_in_proces).count('_'),',resterende levens:',levens)
+        print('totaal:',len(woord),',nog te raden:',list(woord_in_proces).count('_'),',resterende levens:',levens)
         print('geraden letters:',','.join(geraden_letters))
         print('\n')  
     if woord_geraden == True:
@@ -356,7 +356,7 @@ def visual_galgje(levens):
 
 def spelen():
     
-    #hier worden worden gegenereert van verschillende niveaus
+    #hier worden woorden uit de woordenlijst gehaald van verschillende niveaus
     woord1 = woord_1()
     woord2 = woord_2()
     woord3 = woord_3()
