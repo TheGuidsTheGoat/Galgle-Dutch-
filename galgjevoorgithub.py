@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 26 16:37:27 2023
-
-@author: antoniebraams
-"""
-
 import random #hier importeren we twee bibliotheken om wat meer codes te kunnen gebruiken
 import time
 
