@@ -9,7 +9,7 @@ Created on Thu Jan 26 16:37:27 2023
 import random #hier importeren we twee bibliotheken om wat meer codes te kunnen gebruiken
 import time
 
-#In de volgende drie functies worden random woorden gegenereerd van verschillende niveau's uit de woordenlijst
+#In de volgende drie functies worden random woorden van verschillende niveau's gekozen uit de woordenlijst
 
 def woord_1():  
     woord1 = random.choice(nederlandse_woordenlijst_makkelijk)
@@ -83,7 +83,7 @@ def galgje_1(woord):
         print(visual_galgje(levens))
         print(woord_in_proces)
         print('\n') 
-        print('toaal:',len(woord),',nog te raden:',list(woord_in_proces).count('_'),',resterende levens:',levens) #dit wordt getoond aan de gebruiker tijdens het spel om te kunnen zien hoeveel letters er in totaal zijn, hoeveel nog te gaan en welke letters er al geraden zijn
+        print('totaal:',len(woord),',nog te raden:',list(woord_in_proces).count('_'),',resterende levens:',levens) #dit wordt getoond aan de gebruiker tijdens het spel om te kunnen zien hoeveel letters er in totaal zijn, hoeveel nog te gaan en welke letters er al geraden zijn
         print('geraden letters:',','.join(geraden_letters))
         print('\n')  
     if woord_geraden == True: #dit is weer buiten de while loop en als onze variabele veranderd is in True weet de code dat de gebruiker het woord heeft geraden
@@ -356,7 +356,7 @@ def visual_galgje(levens):
 
 def spelen():
     
-    #hier worden woorden uit de woordenlijst gehaald van verschillende niveaus
+    #hier worden de woorden uit de woordenlijst gekozen
     woord1 = woord_1()
     woord2 = woord_2()
     woord3 = woord_3()
