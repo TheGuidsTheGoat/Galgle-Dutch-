@@ -9,7 +9,7 @@ Created on Thu Jan 26 16:37:27 2023
 import random #hier importeren we twee bibliotheken om wat meer codes te kunnen gebruiken
 import time
 
-#In de volgende drie functies worden random woorden van verschillende niveau's gekozen uit de woordenlijst
+#In de volgende drie functies worden random woorden van verschillende niveaus gekozen uit de woordenlijst
 
 def woord_1():  
     woord1 = random.choice(nederlandse_woordenlijst_makkelijk)
@@ -74,9 +74,9 @@ def galgje_1(woord):
                 print('Helaas,',antwoord,'is niet het woord')
                 print('\n')  
                 levens -= 1
-                geraden_woorden.append(antwoord) #als het woord fout is word het woord in de lijst gezet in de lijst met alle geraden woorden
+                geraden_woorden.append(antwoord) #als het woord fout is wordt het woord in de lijst gezet in de lijst met alle geraden woorden
             elif antwoord == woord:
-                woord_geraden = True # als het woord klopt word de variabele die initieel als False stond verandert in True
+                woord_geraden = True #als het woord klopt word de variabele die initieel als False stond verandert in True
                 woord_in_proces = woord
         else:
             print('Geen geldige invoer') #als er geen geldige invoer was dan laten we dat hiermee weten aan de gebruiker
