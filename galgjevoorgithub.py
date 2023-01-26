@@ -1,7 +1,7 @@
 import random #hier importeren we twee bibliotheken om wat meer codes te kunnen gebruiken
 import time
 
-#In de volgende drie functies worden random woorden van verschillende niveaus gekozen uit de woordenlijst
+#in de volgende drie functies worden random woorden van verschillende niveaus gekozen uit de woordenlijst
 
 def woord_1():  
     woord1 = random.choice(nederlandse_woordenlijst_makkelijk)
@@ -15,13 +15,13 @@ def woord_3():
     woord3 = random.choice(nederlandse_woordenlijst_moeilijk)
     return woord3.upper()
     
-#De functie genaamd 'niveau' wordt afgespeeld als we willen weten welk niveau de gebruiker het spel wil spelen
+#de functie genaamd 'niveau' wordt afgespeeld als we willen weten welk niveau de gebruiker het spel wil spelen
     
 def niveau():
     level = input('Op welk level zou u het spel willen spelen: ')
     return level
 
-#In de functie 'galgje1' speelt zicht galgje af op niveau 1, hetzelfde geldt voor de andere galgje functies maar dan op de andere niveaus
+#in de functie 'galgje1' speelt zicht galgje af op niveau 1, hetzelfde geldt voor de andere galgje functies maar dan op de andere niveaus
 
 def galgje_1(woord):
     woord_in_proces = '_' * len(woord) #creeren string van lege balkjes ter lengte van het woord
