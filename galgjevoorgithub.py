@@ -6,7 +6,7 @@ Created on Thu Jan 26 16:37:27 2023
 @author: antoniebraams
 """
 
-import random #hier importeren we wat bibliotheken om wat meer codes te kunnen gebruiken
+import random #hier importeren we twee bibliotheken om wat meer codes te kunnen gebruiken
 import time
 
 #In de volgende drie functies worden random woorden gegenereerd van verschillende niveau's uit de woordenlijst
@@ -23,28 +23,28 @@ def woord_3():
     woord3 = random.choice(nederlandse_woordenlijst_moeilijk)
     return woord3.upper()
     
-#De functie genaamd 'niveau' word afgespeeld als we willen weten welk niveau de gebruiker het spel wilt spelen
+#De functie genaamd 'niveau' wordt afgespeeld als we willen weten welk niveau de gebruiker het spel wil spelen
     
 def niveau():
     level = input('Op welk level zou u het spel willen spelen: ')
     return level
 
-#In de functie 'galgje1' speelt zicht galgje af op niveau 1. zelfde geldt voor de andere galgje functies maar dan op de andere niveaus
+#In de functie 'galgje1' speelt zicht galgje af op niveau 1, hetzelfde geldt voor de andere galgje functies maar dan op de andere niveaus
 
 def galgje_1(woord):
     woord_in_proces = '_' * len(woord) #creeren string van lege balkjes ter lengte van het woord
-    woord_geraden = False #initiele waaarde van variabele die naar True gaat als het woord is geraden
-    geraden_letters = [] #variabele waar alle geraden letters in bewaard worden
-    geraden_woorden = [] #variabele waar alle geraden woorden in bewaard worden
+    woord_geraden = False #initiële waarde van de variabele die naar True gaat als het woord is geraden
+    geraden_letters = [] #lijst waar alle geraden letters in bewaard worden
+    geraden_woorden = [] #lijst waar alle geraden woorden in bewaard worden
     levens = 6 #het spel begint met 6 levens en daar begint de variabele ook mee
     
     print('Laten we beginnen!')
     
     print(visual_galgje(levens)) #laat de galg in het scherm zien door uit de juiste levens in te vullen bij de functie: 'visual galgje'
     
-    print(woord_in_proces) #laat de op het begin nog lege balk in beeld zien
+    print(woord_in_proces) #laat de streepjesbalk waar het woord geraden wordt zien in beeld, deze is in het begin nog leeg
     
-    print('\n') #voor extra regels tussen texten
+    print('\n') #voor extra regels tussen teksten
    
     while woord_geraden == False and levens > 0: #een loop die doorgaat totdat de levens op zijn of het woord geraden is
         antwoord = input('Geef uw letter of een woord: ').upper() #vraagt zolang de loop doorgaat de speler om een input in de vorm van een letter of een woord
@@ -65,7 +65,7 @@ def galgje_1(woord):
                 for i in plekken: #hier vervangen we met hulp van de indexen alle plekken waar eerst nog een balkje stond nu met de geraden letter
                     woord_als_lijst[i] = antwoord
                 woord_in_proces = ''.join(woord_als_lijst)
-                if '_' not in woord_in_proces: #als alle balkes verdwenen zijn veranderd onze variabele die we initieel als False hadden gezet in True en zal onze loop stoppen
+                if '_' not in woord_in_proces: #als alle balkjes verdwenen zijn, verandert onze variabele die we initieel als False hadden gezet in True en zal onze loop stoppen
                     woord_geraden = True
         elif len(antwoord) == len(woord) and antwoord.isalpha(): #voor het geval als de gebruiker een heel woord als input geeft word er hier gekeken of het wel geldige invoer is en dezelfde lengte heeft als het woord
             if antwoord in geraden_woorden:
@@ -79,19 +79,19 @@ def galgje_1(woord):
                 woord_geraden = True # als het woord klopt word de variabele die initieel als False stond verandert in True
                 woord_in_proces = woord
         else:
-            print('Geen geldige invoer') #als er geen geldige invoer was dan laten we dat hier weten aan de gebruiker
+            print('Geen geldige invoer') #als er geen geldige invoer was dan laten we dat hiermee weten aan de gebruiker
         print(visual_galgje(levens))
         print(woord_in_proces)
         print('\n') 
-        print('toaal:',len(woord),',nog te raden:',list(woord_in_proces).count('_'),',resterende levens:',levens) #dit word getoont aan de gerbuiker tijdens het spel om te kunnen zien hoeveel letters er in totaal zijn, hoeveel nog te gaan en welke letters er al geraden zijn
+        print('toaal:',len(woord),',nog te raden:',list(woord_in_proces).count('_'),',resterende levens:',levens) #dit wordt getoond aan de gebruiker tijdens het spel om te kunnen zien hoeveel letters er in totaal zijn, hoeveel nog te gaan en welke letters er al geraden zijn
         print('geraden letters:',','.join(geraden_letters))
         print('\n')  
     if woord_geraden == True: #dit is weer buiten de while loop en als onze variabele veranderd is in True weet de code dat de gebruiker het woord heeft geraden
         print('Van Harte gefeliciteerd, u heeft het woord geraden')
-    else: #zoniet, dan weet de code dat de gebruiker het woord niet heeft geraden 
+    else: #zo niet, dan weet de code dat de gebruiker het woord niet heeft geraden 
         print('Helaas, het is u niet gelukt om het woord te raden. Het antwoord was',woord,)
 
-#in de volgende drie functies zijn alleen de niveaus anders en verschillen dus eigenlijk alleen de woorden  met de code van galgje1       
+#in de volgende drie functies zijn alleen de niveaus anders en verschillen dus eigenlijk alleen de woorden met de code van galgje1       
 #daarom is er alleen commentaar bij stukjes code die afwijken van galgje1        
 
 def galgje_2(woord):
@@ -142,7 +142,7 @@ def galgje_2(woord):
         print(visual_galgje(levens))
         print(woord_in_proces)
         print('\n') 
-        print('toaal:',len(woord),',nog te raden:',list(woord_in_proces).count('_'),',resterende levens:',levens)
+        print('totaal:',len(woord),',nog te raden:',list(woord_in_proces).count('_'),',resterende levens:',levens)
         print('geraden letters:',','.join(geraden_letters))
         print('\n')  
     if woord_geraden == True:
@@ -214,12 +214,12 @@ def shuffle(woord):
     geraden_woorden = []
     levens = 6
     woord_geshuffled=list(woord)
-    random.shuffle(woord_geshuffled) #hier word het woord in een random geshuffled
+    random.shuffle(woord_geshuffled) #hier worden de letters van het woord in een random volgorde gezet
     woord_= ''.join(woord_geshuffled)
     print('Laten we beginnen!')
     print(visual_galgje(levens))
     print(woord_in_proces)
-    print('\n') #voor extra regels tussen texten
+    print('\n') #voor extra regels tussen teksten
    
     while woord_geraden == False and levens > 0:
         antwoord = input('Geef uw letter of een woord: ').upper()
@@ -272,7 +272,7 @@ def shuffle(woord):
                 
             
         
-#in de fucntie visual_galgje zijn de verschillende plaatjes die aan de gebruiker getoont worden opgeslagen     
+#in de functie visual_galgje worden de verschillende plaatjes die tijdens het aan de gebruiker worden getoond opgeslagen     
     
 
 def visual_galgje(levens):
@@ -352,7 +352,7 @@ def visual_galgje(levens):
     
 
 
-# de functie spelen is de main functie van de code waar alles zo'n beetje word aangestuurd
+#de functie spelen is de hoofdfunctie van de code waar alle andere functies zich bevinden en worden gereguleerd
 
 def spelen():
     
@@ -361,9 +361,9 @@ def spelen():
     woord2 = woord_2()
     woord3 = woord_3()
    
-    level = niveau() #hier word er in een variabele opgeslagen op welk niveau de gebruiker wilt spelen
+    level = niveau() #hier wordt er in een variabele opgeslagen op welk niveau de gebruiker wilt spelen, deze geeft de gebruiker als input
     
-    #in het volgende stukje  word galgje gespeeld op het juiste niveau en in een loop waardoor de gebruiker kan blijven spelen zolang ze ja zeggen op vraag 
+    #in het volgende stukje wordt galgje gespeeld op het juiste niveau en in een loop waardoor de gebruiker kan blijven spelen zolang ze ja zeggen op de vraag 
     if int(level) == 1:
         galgje_1(woord1)
         while input('Wilt u nog een keer spelen? (Ja/Nee): ').upper() == 'JA':
