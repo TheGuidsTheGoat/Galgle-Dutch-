@@ -1,3 +1,8 @@
+%store -r nederlandse_woordenlijst_makkelijk
+%store -r nederlandse_woordenlijst_gemiddeld
+%store -r nederlandse_woordenlijst_moeilijk
+
+
 import random #hier importeren we twee bibliotheken om wat meer codes te kunnen gebruiken
 import time
 
