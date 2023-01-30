@@ -7,6 +7,6 @@ Wanneer de speler de code en de woordenlijst heeft gekopieerd is het belangrijk 
 ‘%store -r nederlandse_woordenlijst_moeilijk’. Deze commando’s zullen ook bovenaan de GitHub-code staan zodat deze gekopieerd kunnen worden.
 
 Hierna is het de bedoeling dat de speler nog drie verschillende inputs maakt net zoals hierboven. Hierin worden deze commando’s achtereenvolgend ingevoerd: ‘%store nederlandse_woordenlijst_makkelijk’, ‘%store nederlandse_woordenlijst_gemiddeld’ en ‘%store nederlandse_woordenlijst_moeilijk’. Wanneer deze drie codes gerund worden, zou onder elke input moeten komen te staan 
-‘Stored ‘nederlandse_woordenlijst_niveau’ (list)’. Wanneer dit is gebeurd kan de code gerunt worden en start het spel.
+‘Stored ‘nederlandse_woordenlijst_niveau’ (list)’. Wanneer dit is gebeurd kan de code gerund worden en start het spel.
 
 
