@@ -1,10 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jan 16 19:30:38 2023
-
-@author: maxdieleman
-"""
+%store -r nederlandse_woordenlijst_makkelijk
+%store -r nederlandse_woordenlijst_gemiddeld 
+%store -r nederlandse_woordenlijst_moeilijk
 
 nederlandse_woordenlijst_makkelijk=['aaien','aambei','aambeeld','aanbod','aanbouw','aandeel',
 'aandoen','aanhef','aanleg','aannemen','aanpassen','aanslag','aanzoek','aardappel','aardbei','aardbol',
@@ -34,7 +30,18 @@ nederlandse_woordenlijst_makkelijk=['aaien','aambei','aambeeld','aanbod','aanbou
 'gracht','gratis','grens','gravin','grimmig','groot','grond','gunst','haaibaai','haard','handbal','handig',
 'havik','haver','haven','hecht','heldin','helium','hemel','hengel','herberg','herfst','hertog','heuvel',
 'hiphop','hobby','hockey','hoest','hommel','honger','honing','horeca','horizon','horzel','hotdog','hufter',
-'hyena','icoon','']
+'hyena','icoon','ideaal','iedereen','idioot','imker','immuun','index','infuus','inrit','inzet','islam','jaartal',
+'kaars','kaart','kabel','kabaal','kanon','kanjer','kapot','kapper','karma','karton','kasteel','ketjap','kledij',
+'klein','kliniek','kloon','kluit','kluns','knoop','koekoek','koffie','komkommer','komiek','komeet','koning',
+'koppel','korting','krant','krater','krans','kreupel','kritiek','kwaad','laars','laken','larve','lastig',
+'lasso','leeuw','leraar','letsel','letter','leven','lciht','liefde','likeur','links','loket','lokaal','loser',
+'manier','moeder','mango','markt','naakt','naast','naief','natuur','nieuw','nicht','noord','oceaan','ochtend',
+'onder','oever','oorlog','parfum','partij','patat','picknick','piloot','poker','poort','precies','pretpark',
+'prijs','raket','roker','rechts','rector','rommel','romig','rooster','ruimte','rustig','safari','schaap',
+'schiet','school','sirene','slaap','specht','spoor','sprong','spuug','teller','tempel','termiet','tekst',
+'titel','toffee','toestel','toilet','trommel','uitrit','uitval','uniek','vader','vandaag','vangst','varken',
+'verkeer','verlies','vloek','veulen','visite','vlakte','vlieg','vuist','vulpen','walvis','wanneer','water',
+'wekker','wereld','wonder','zebra','zicht','zielig','zolder','zondag','zwaard','zwart','zwijn']
 
 nederlandse_woordenlijst_gemiddeld=['aanvaller','aandacht','aanklacht','aanrecht','aardkorst','aardolie',
 'abject','abortus','abrikoos','acceptabel','accijns','accuraat','actief','adoptie','ademnood','afgetraind',
@@ -60,7 +67,27 @@ nederlandse_woordenlijst_gemiddeld=['aanvaller','aandacht','aanklacht','aanrecht
 'grondwet','groothandel','grootvader','hacker','hagedis','hamburger','handbagage','handdoek','handicap',
 'hangslot','hardcore','harmonica','harpoen','hartaanval','heerlijk','heimwee','hekserij','herkauwer',
 'hindernis','hilarisch','hoefijzer','hoofdgerecht','hoofdrol','hoogleraar','hovenier','huidskleur','huisarrest',
-'huwelijk','hypotheek']
+'huwelijk','hypotheek','iemand','ijsblokje','imitatie','illegaal','incident','inclusief','inderdaad','inflatie',
+'infrarood','innerlijk','insect','instructeur','intonatie','irritant','isolatie','jaloezie','jampot','jargon',
+'jasmijn','jenever','jutezak','juweel','kaaiman','kaaskop','kabeljauw','kaketoe','kamerlid','kamille',
+'kampioen','kanarie','kampvuur','kantoor','kapitaal','kapitein','karnemelk','katholiek','kauwgom','keramiek',
+'kernreactor','kerstboom','kimono','kippensoep','kladblok','kletskous','klooster','knaagdier','knakworst',
+'knieholte','knolselderij','kofferbak','koolrabi','koriander','kostuum','kraanwater','kraslot','kristalsuiker',
+'kroepoek','kurkentrekker','kwalificatie','laminaat','langpootmug','landklimaat','lasagne','lariekoek',
+'leeftijd','leermeester','legpuzzel','lekkage','lesauto','lettertype','leverancier','liberaal','lichaam',
+'lieveheersbeestje','lilliputter','lintworm','lipgloss','literatuur','logica','loofboom','loterij','luchtdruk',
+'lustobject','monster','makkelijk','manege','mergpijp','meteoor','nectarine','nachtegaal','narcisme','naturel',
+'nostalgie','nylon','obstakel','obsessie','ogenblik','omgeving','olifant','onderwijs','ongeluk','passagier',
+'pendule','persoon','periode','pieper','piercing','podium','politie','postzegel','profiel','pyjama','quiche',
+'quasi','rabarber','radicaal','rabbijn','ramadan','reactie','rechthoek','register','rendabel','repetitie',
+'salaris','salmiak','satelliet','scheldwoord','scheurbuik','schimmel','schipper','schrift','senior','smeerolie',
+'specerij','speedboot','speltbrood','sporttief','stokbrood','straaljager','strategie','tampon','tandpasta',
+'tattoo','telefoon','telescoop','tandarts','ticket','theater','tijdbom','toneelstuk','tompoes','tropisch',
+'televisie','typfout','uiensoep','unaniem','uniform','vaatdoek','vaseline','vegetarisch','verdieping',
+'verjaardag','viaduct','vijand','vlierbes','vloedgolf','vloerkleed','voertuig','vuurpijl','wachtwoord',
+'wandelaar','waterlelie','website','weerbericht','weiland','wenkbrauw','wespennest','wierook','wintersport',
+'winkelwagen','yoghurt','zakdoek','zeespiegel','zeepaard','zeppelin','zetmeel','ziekenhuis','zoetzuur',
+'zoektocht','zoetekauw','zoogdier','zuidpool','zwerver']
 
 nederlandse_woordenlijst_moeilijk=['abominabel','acapella','adequaat','aerobics','acupunctuur','adhesie'
 'affiniteit','aftershave','agave','aktetas','allegro','alliage','amputatie','analogie','annexatie',
@@ -78,7 +105,17 @@ nederlandse_woordenlijst_moeilijk=['abominabel','acapella','adequaat','aerobics'
 'florissant','fouilleren','frequentie','fuchsia','functioneel','fysiotherapie','cocktail','genetica',
 'genuanceerd','geranium','geuzennaam','glascontainer','glasvezel','globetroter','goniometrie','goudbruin',
 'graftombe','grijpstuiver','guerrilla','guillotine','gymnasium','gynaecoloog','halfpension','halleluja',
-'harakiri','herbivoor','hielenlikker','homeopaat','honkbalknuppel','honorair','hyperactief','hypocriet','']
+'harakiri','herbivoor','hielenlikker','homeopaat','honkbalknuppel','honorair','hyperactief','hypocriet',
+'ijshockey','improvisatie','incubatietijd','intermezzo','jazzballet','journalistiek','jukebox','jurisdictie',
+'kamikaze','kernfysica','kettingroker','kilocalorie','kleptomaan','kolencentrale','koolhydraat','koudbloedig',
+'koudwatervrees','kruidenboter','kruisraket','landskampioen','langoustine','legitimatie','lendebiefstuk',
+'lexicon','leverworst','limousine','liquidatie','logaritme','luxaflex','lymfeklier','manicure','monogamie',
+'mandoline','manicure','nachtblind','necropolis','neurotransmitter','oldtimer','ootmoedig','ophaalbrug',
+'parochie','pirouette','plutonium','procentueel','psychopaat','quizmaster','radioactief','raffinage',
+'rastakapsel','reincarnatie','remouladesaus','renaissance','saucijzenbroodje','slangenmens','sloppenwijk',
+'snoekduik','spliterwt','stukadoor','studieschuld','tamboerijn','thermometer','toverspreuk','trampoline',
+'tsunami','ultraviolet','vennootschap','verloskundige','vinexwijk','vocabulaire','waarschuwing','waterjuffer',
+'xylofoon','xenofobie','zeeschildpad','zendstation','zenuwachtig','zweefvliegtuig']
 
 
 
