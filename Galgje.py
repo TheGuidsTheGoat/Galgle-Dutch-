@@ -6,9 +6,9 @@ Created on Mon Jan 30 21:17:54 2023
 @author: antoniebraams
 """
 
-%store nederlandse_woordenlijst_makkelijk
-%store nederlandse_woordenlijst_gemiddeld
-%store nederlandse_woordenlijst_moeilijk
+%store -r nederlandse_woordenlijst_makkelijk
+%store -r nederlandse_woordenlijst_gemiddeld
+%store -r nederlandse_woordenlijst_moeilijk
 
 import random #hier importeren we wat bibliotheken om wat meer codes te kunnen gebruiken
 import time
