@@ -1,6 +1,6 @@
-%store -r nederlandse_woordenlijst_makkelijk
-%store -r nederlandse_woordenlijst_gemiddeld 
-%store -r nederlandse_woordenlijst_moeilijk
+%store nederlandse_woordenlijst_makkelijk
+%store nederlandse_woordenlijst_gemiddeld 
+%store nederlandse_woordenlijst_moeilijk
 
 nederlandse_woordenlijst_makkelijk=['aaien','aambei','aambeeld','aanbod','aanbouw','aandeel',
 'aandoen','aanhef','aanleg','aannemen','aanpassen','aanslag','aanzoek','aardappel','aardbei','aardbol',
